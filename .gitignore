@@ -1,0 +1,7 @@
+.idea
+*.iml
+
+*.pyc
+__pycache__
+
+config.ini
