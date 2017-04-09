@@ -1,6 +1,6 @@
 [credentials]
-aws_access_key_id = <INSERT_YOUR_ACCESS_KEY_FROM-ec2rc.sh>
-aws_secret_access_key = <INSERT_YOUR_SECRET_KEY_FROM-ec2rc.sh>
+aws_access_key_id = INSERT_YOUR_ACCESS_KEY_FROM-ec2rc.sh
+aws_secret_access_key = INSERT_YOUR_SECRET_KEY_FROM-ec2rc.sh
 
 [nectar]
 endpoint = nova.rc.nectar.org.au
@@ -11,7 +11,11 @@ port = 8773
 [default]
 instance_name = webserver
 image_id = ami-86f4a44c
-key_name = <INSERT_YOUR_KEY_PAIR_NAME>
-instance_type = m2.tiny
+key_name = INSERT_YOUR_KEY_PAIR_NAME
+instance_type = m2.small
 security_groups = ["default", "ssh", "http", "icmp"]
+
+[local]
+key_file_path = /home/username/path/to/key/location
+key_file = cloud_key_pair.key
 

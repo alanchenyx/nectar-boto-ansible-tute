@@ -65,6 +65,9 @@ def main():
     else:
         print('Excuse me?')
 
+    if len(my_instances) < 1:
+        exit()
+
     print('=' * 100)
     uin = input('Start all instances (y or n): ')
     if uin == 'y':
